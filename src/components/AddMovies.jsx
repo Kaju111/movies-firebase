@@ -3,13 +3,16 @@ import { TailSpin } from "react-loader-spinner";
 import {addDoc} from "firebase/firestore"
 import {moviesRef} from "../firebase/firebase"
 import swal from "sweetalert"
+import Reviews from "./Reviews";
 
 const AddMovies = () => {
   const [form, setForm] = useState({
     title: "",
     year: "",
     description: "",
-    image: ""
+    image: "",
+    rated: 0,
+    rating: 0
   })
 
     const [loading, setLoading] = useState(false)
@@ -23,6 +26,12 @@ const AddMovies = () => {
           icon : "success",
           buttons : false,
           timer : 3000
+      })
+      setForm({
+        title: "",
+        year: "",
+        description: "",
+        image: ""
       })
     }
     catch(err){
