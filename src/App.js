@@ -5,7 +5,7 @@ import AddMovies from './components/AddMovies'
 import {Routes, Route} from 'react-router-dom'
 import Detail from './components/Detail'
 import  Login  from "./components/Login"
-import  Signup  from "./components/signup"
+import  Signup  from "./components/Signup"
 
  const Appstate = createContext()
 

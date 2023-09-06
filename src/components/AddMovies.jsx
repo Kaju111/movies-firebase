@@ -3,7 +3,6 @@ import { TailSpin } from "react-loader-spinner";
 import {addDoc} from "firebase/firestore"
 import {moviesRef} from "../firebase/firebase"
 import swal from "sweetalert"
-import Reviews from "./Reviews";
 
 const AddMovies = () => {
   const [form, setForm] = useState({
