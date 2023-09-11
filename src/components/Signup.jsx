@@ -25,7 +25,7 @@ const Signup = () => {
     window.recaptchaVerifier = new RecaptchaVerifier('recaptcha-container', {
       'size': 'invisible',
       'callback': (response) => {
-        
+        // reCAPTCHA solved, allow signInWithPhoneNumber.
       }
     }, auth);
   }
@@ -149,7 +149,7 @@ const Signup = () => {
             Password
           </label>
           <input
-            type={'password'} 
+            type={'password'}
             id="message"
             name="message"
             value={form.password}
